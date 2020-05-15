@@ -7,7 +7,7 @@ class Field extends React.Component {
 			<div className="field">
 				<label>
 					<LanguageContext.Consumer>
-						{value => (value === 'English' ? 'Name' : 'Naam')}
+						{value => (value.language === 'English' ? 'Name' : 'Naam')}
 					</LanguageContext.Consumer>
 				</label>
 				<input type="text" />
